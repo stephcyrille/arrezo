@@ -1,0 +1,190 @@
+/* Social */
+.tel-soc{
+    background-color: #f0f8ff;
+    padding: 10px;
+    /* border-bottom: 1px solid #c41919; */
+}
+.tel{
+    padding-left: 10px; 
+}
+.social{
+    text-align: right;
+}
+.logoSocial{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+
+/* Gestion de la navbar */
+nav{
+    background-color: #3388c0;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link{
+    color: #ff2929;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #f0f8ff;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #ff2929;
+}
+.navbar-nav.mr-auto.mx-auto{
+    padding-left: 10px;
+    /* padding-top: 120px; */
+}
+.scrollStyle{
+    background-color: rgba(45, 224, 45, 0.9);
+    transition: .8s;
+    padding: 10px;
+}
+
+
+/* Gestion du header */
+header{
+    background-image: url('../imgs/charity.jpg');
+    background-size: cover;
+}
+header .row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.col-md-8.header-text{
+    padding-top: 150px;
+    padding-left: 50px;
+    color: white;
+}
+.col-md-8.header-text h1, .col-md-8.header-text h2{
+    /* text-align: center; */
+    background-color: rgba(0, 0, 0, 0.144);
+    padding: 5px;
+}
+.row.legend{
+    margin-left: 0px;
+    margin-right: 0px; 
+}
+.row.legend .jumbotron{
+    width: 100%;
+    background-color: #c41919;
+    color: antiquewhite;
+    border-radius: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    z-index: 4;
+}
+
+/* First section */
+.first-section .row{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 40px 0px 30px 0px;
+}
+.first-section .col-md-8 .presentation{
+    padding: 70px 20px 0 0px;
+    font-size: 20px;
+}
+.first-section .col-md-4.img-bck{
+    height: 400px;
+    background-image: url('../imgs/charityR.png');
+    background-size: cover;
+}
+
+
+/* Section Style */
+section .row{
+    margin-top: 15px;
+    margin-bottom: 00px;
+    margin-left: 0px;
+    margin-right: 0px; 
+    padding-bottom: 30px; 
+}
+
+section h2{
+    width: 100%;
+    color: #4e4e4e;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.col-md-4.stats .row.icon i{
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+}
+.col-md-4.stats .row.ic_legend h3{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.row.temoignage{
+    background-color: #3388c0;
+    padding-bottom: 50px;
+}
+.row.temoignage h2{
+    color: aliceblue;
+    padding-top: 50px;
+}
+.col-md-6.wrap{
+    padding: 20px;
+}
+.row.first{
+    background-color: #fff;
+    border-radius: 4px;
+    border-radius: 10px;
+}
+
+/* Newsletter */
+#newsletter{
+    background-color: #c41919;
+}
+#newsletter .row{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.heading i{
+    font-size: 80px;
+    color: aliceblue;
+}
+.heading p{
+    font-size: 15px;
+    color: aliceblue;
+}
+
+/* Pied de page */
+.row.footer{
+    margin-left: 0px; 
+    margin-right: 0px;
+    background-color:#3388c0;
+}
+
+.row.footer p{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 5px 5px 5px 5px;
+    color: rgb(235, 235, 226);
+}
+
+
+
+
+
+
+
+/* Responsive */
+.navbar-light .navbar-toggler {
+    /* background-color: rgba(68, 153, 210, 0.397); */
+    border-color: rgba(190, 1, 1, 0.63);
+    cursor: pointer;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-collapse.collapse.show{
+    /* background-color: rgba(68, 153, 210, 0.397); */
+}
