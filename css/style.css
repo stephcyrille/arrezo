@@ -327,6 +327,12 @@ header .row{
     padding-left: 50px;
     opacity: 0;
 }
+.socialResponsive{
+    display: none;
+}
+.socialResponsive1{
+    display: none;
+}
 .perso:hover>.donor{
     opacity: .7;
 }
@@ -453,6 +459,7 @@ section h2{
     margin-left: 0px; 
     margin-right: 0px;
     background-color:#ffffff;
+    box-shadow: 2px 2px 15px 2px rgb(29, 29, 29);
 }
 .footer .col-md-6.col-sm-6.col-12 p{
     text-align: right; 
@@ -479,6 +486,9 @@ section h2{
     transition: 0.3s ease-in;
 }
 @media only screen and (max-width: 600px){
+    .col-md-6.col-6.tel{
+        padding: 0px;
+    }
     .col-md-4.stats .row.icon i{
         width: 100%;
         text-align: center;
@@ -490,7 +500,49 @@ section h2{
         padding: 10px;
         font-size: 22px;
     }
-
+    .causeBloc{
+        text-align: center;
+    }
+    .sp .pw.last{
+        margin-bottom: 50px;
+    }
+    .perso h5{
+        padding-bottom: 0px;
+        text-transform: uppercase;
+    }
+    .socialResponsive1{
+        display: block;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .row .bl{
+        margin: 0px;
+    }
+    .staf .pw{
+        text-align: center;
+    }
+    .staf .pw img{
+        width: 100%;
+    }
+    .staf h4{
+        text-align: center;
+        padding-top: 10px;
+        text-transform: uppercase;
+    }
+    .staf .role{
+        text-align: center;
+    }
+    .socLogo{
+        display: none;
+    }
+    .socLogo2{
+        display: none;
+    }
+    .socialResponsive{
+        display: block;
+        text-align: center;
+        padding-bottom: 30px;
+    }
     .footer .col-md-6.col-sm-6.col-12{
         text-align: center;
     }

@@ -99,6 +99,15 @@ nav{
 .row.causeHeader{
     margin: 0px;
 }
+.row.causeHeader h1{
+    color: rgb(245, 245, 245);
+    border-bottom: 1px solid white;
+    padding-top: 50px;
+    padding-left: 75px;
+    text-shadow: 2px 1px #1a1a1a;
+    letter-spacing: -1px;
+    padding: 20px 10px 10px 20px;
+}
 .calendar{
     padding: 10px 0 10px 80px;
 }
@@ -109,6 +118,60 @@ nav{
 
 
 /* Intro Cause style */
+@keyframes trans0{
+    0%{
+        transform: translateX(-100px)
+    }
+    100%{
+        transform: translateX(0)
+    }
+}
+.effect0 {
+    animation-name: trans0;
+    animation-duration: 1.2s;
+    transition: ease-in; 
+}
+@keyframes trans1{
+    0%{
+        transform: translateX(-80px)
+    }
+    100%{
+        transform: translateX(0)
+    }
+}
+.effect1 {
+    animation-name: trans1;
+    animation-duration: .9s;
+    transition: ease-in; 
+}
+@keyframes trans2{
+    0%{
+        transform: translateX(-60px)
+    }
+    100%{
+        transform: translateX(0)
+    }
+}
+.effect2 {
+    animation-name: trans2;
+    animation-duration: .8s;
+    transition: ease-in; 
+}
+@keyframes trans3{
+    0%{
+        transform: translateX(-50px)
+    }
+    100%{
+        transform: translateX(0)
+    }
+}
+.effect3 {
+    animation-name: trans3;
+    animation-duration: .5s;
+    transition: ease-in; 
+}
+
+
 .causes .row{
     margin: 0px;
 }
@@ -135,10 +198,13 @@ nav{
 .causeText .more a{
     color: #641515;
 }
+.jauge{
+    border: 1px solid lightgray;
+}
 .gauge{
     height: 10px;
-    width: 100%;
-    border: 1px solid lightgray;
+    width: 80%;
+    background-color: #dd1c1c;
 }
 
 .causeDon{
@@ -174,6 +240,7 @@ nav{
     margin-left: 0px; 
     margin-right: 0px;
     background-color:#ffffff;
+    box-shadow: 2px 2px 15px 2px rgb(29, 29, 29);
 }
 .footer .col-md-6.col-sm-6.col-12 p{
     text-align: right; 
@@ -198,3 +265,40 @@ nav{
     transition: 0.3s ease-in;
 }
 
+
+
+
+
+@media only screen and (max-width: 600px){
+    .col-md-6.col-6.tel{
+        padding: 0px;
+    }
+    .header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .row.causeHeader{
+        padding: 10px;
+    }
+    .row.causeHeader h1{
+        padding: 0px;
+        text-align: center;
+    }
+    .calendar{
+        padding: 10px;
+        text-align: center;
+    }
+    .causeBloc{
+        margin-bottom: 40px;
+    }
+    .causeText h4{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .causeImg img{
+        width: 100%;
+    }
+    .footer .col-md-6.col-sm-6.col-12{
+        text-align: center;
+    }
+}

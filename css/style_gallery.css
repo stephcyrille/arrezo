@@ -231,11 +231,13 @@ section{
     margin-left: 0px; 
     margin-right: 0px;
     background-color:#ffffff;
+    box-shadow: 2px 2px 15px 2px rgb(29, 29, 29);
 }
 .footer .col-md-6.col-sm-6.col-12 p{
     text-align: right; 
     padding-top:15px;
 }
+
 
 
 
@@ -255,3 +257,74 @@ section{
     transition: 0.3s ease-in;
 }
 
+
+.navlDonResponsive{
+    padding: 50px 0 50px 0;
+    background-color: #5196c7;
+    display: none;
+}
+.navlDonResponsive h4{
+    border-left: 4px solid #f6442e;
+    padding-left: 8px;
+    margin-bottom: 20px;
+}
+.navlDonResponsive .wrapper{
+    height: 150px;
+    width: 100%;
+    background-image: url('../imgs/mappmonde.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+.navlDonResponsive .wrapper .don{
+    background-color: rgba(0, 0, 0, 0.582);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 20px 0 0 0; 
+}
+.navlDonResponsive .wrapper .don h5{
+    padding: 0 0 10px 0;
+    text-transform: uppercase;
+}
+.navlDonResponsive .wrapper .don h6{
+    padding: 0 0 5px 0;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 600px){
+    .col-md-6.col-6.tel{
+        padding: 0px;
+    }
+    .header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .row.causeHeader{
+        padding: 10px;
+    }
+    .row.causeHeader h1{
+        padding: 0px;
+        text-align: center;
+    }
+    .calendar{
+        padding: 10px;
+        text-align: center;
+    }
+    .contenu{
+        padding-top: 50px;
+    }
+    .navlDon{
+        padding: 50px 0 50px 0;
+        display: none;
+    }
+    .navlDonResponsive{
+        padding: 50px 30px 50px 30px;
+        display: block;
+    }
+    .footer .col-md-6.col-sm-6.col-12{
+        text-align: center;
+    }
+}

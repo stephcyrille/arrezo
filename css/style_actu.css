@@ -99,6 +99,15 @@ nav{
 .row.causeHeader{
     margin: 0px;
 }
+.row.causeHeader h1{
+    color: rgb(245, 245, 245);
+    border-bottom: 1px solid white;
+    padding-top: 50px;
+    padding-left: 75px;
+    text-shadow: 2px 1px #1a1a1a;
+    letter-spacing: -1px;
+    padding: 20px 10px 10px 20px;;
+}
 .calendar{
     padding: 10px 0 10px 80px;
 }
@@ -110,8 +119,29 @@ nav{
 
 
 /* Actu Style */
+.actuBloc:hover .bl,
+.actuBloc:focus .bl {
+  animation-name: zoomer;
+  animation-duration: .9s;
+  box-shadow: 2px 2px 15px 2px rgb(167, 167, 167);
+}
+@keyframes zoomer{
+    0%{
+        transform: scale(1);
+        /* transform: rotateX(180deg); */
+    }
+    50%{
+        transform: scale(1.03);
+    }
+    100%{
+        transform: scale(1);
+        /* transform: rotateX(0deg); */
+    }
+}
+
 .actus{
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .actuWrap{
     padding: 10px;
@@ -155,6 +185,7 @@ nav{
     margin-left: 0px; 
     margin-right: 0px;
     background-color:#ffffff;
+    box-shadow: 2px 2px 8px 2px rgb(54, 54, 54);
 }
 .footer .col-md-6.col-sm-6.col-12 p{
     text-align: right; 
@@ -179,3 +210,33 @@ nav{
     transition: 0.3s ease-in;
 }
 
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    .col-md-6.col-6.tel{
+        padding: 0px;
+    }
+    .header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .row.causeHeader{
+        padding: 10px;
+    }
+    .row.causeHeader h1{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+    }
+    .calendar{
+        padding: 10px;
+        text-align: center;
+    }
+    .footer .col-md-6.col-sm-6.col-12{
+        text-align: center;
+    }
+}

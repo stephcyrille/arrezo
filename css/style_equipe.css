@@ -154,6 +154,11 @@ section{
     font-size: 17px;
     text-align: center;
 }
+.carous{
+    margin: 0px;  
+    background-color: #3388c0; 
+    height: 300px;
+}
 
 
 /* Pied de page */
@@ -162,6 +167,7 @@ section{
     margin-left: 0px; 
     margin-right: 0px;
     background-color:#ffffff;
+    box-shadow: 2px 2px 15px 2px rgb(29, 29, 29);
 }
 .footer .col-md-6.col-sm-6.col-12 p{
     text-align: right; 
@@ -186,3 +192,31 @@ section{
     transition: 0.3s ease-in;
 }
 
+
+
+@media only screen and (max-width: 600px){
+    .col-md-6.col-6.tel{
+        padding: 0px;
+    }
+    .header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .row.causeHeader{
+        padding: 10px;
+    }
+    .row.causeHeader h1{
+        padding: 0px;
+        text-align: center;
+    }
+    .calendar{
+        padding: 10px;
+        text-align: center;
+    }
+    .carous{
+        height: 320px;
+    }
+    .footer .col-md-6.col-sm-6.col-12{
+        text-align: center;
+    }
+}
