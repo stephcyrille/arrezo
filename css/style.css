@@ -94,6 +94,10 @@ header{
     background-image: url('../imgs/charity.jpg');
     background-size: cover;
 }
+.first-section .heading{
+    text-transform: uppercase;
+    font-size: 40px;
+}
 header .row{
     margin-left: 0px;
     margin-right: 0px;
@@ -108,11 +112,17 @@ header .row{
     text-align: right;
     background-color: rgba(0, 0, 0, 0.144);
     padding: 5px;
+    font-weight: 600;
 }
 .row .bout{
     padding-bottom: 50px;
 
 }
+.row .bout a{
+    font-weight: 600;
+    letter-spacing: -1.4px;
+}
+
 .col-md-6.header-text a{
     padding-left: 50px;
     padding-right: 50px;
@@ -343,6 +353,14 @@ header .row{
 }
 
 
+/* TEXT HEADER UPPERCASE */
+.first-section .heading, .first-section h2, .nosProjets .heading, .soutient .heading, .staf .heading, .newsletter-main h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
 
 /* Section Style */
 section .row{
@@ -453,6 +471,11 @@ section h2{
     color: aliceblue;
 }
 
+.corpModal img{
+    height: 200px;
+    width: 100%;
+}
+
 /* Pied de page */
 .footer{
     padding-top: 10px;
@@ -545,5 +568,19 @@ section h2{
     }
     .footer .col-md-6.col-sm-6.col-12{
         text-align: center;
+    }
+    .first-section .heading, .first-section h2, .nosProjets .heading, .soutient .heading, .staf .heading, .newsletter-main h2{
+        font-size: 30px;
+    }
+    .newsletter-main h2{
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    .staf h4, .soutient h5{
+        font-size: 18px;
+    }
+    .header-text h1{
+        text-transform: uppercase;
+        font-size: 38px;
     }
 }

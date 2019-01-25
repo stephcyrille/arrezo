@@ -172,13 +172,15 @@ section h1{
 }
 
 .row.causeHeader h1{
+    text-transform: uppercase;
+    font-weight: 600;
     color: rgb(245, 245, 245);
     border-bottom: 1px solid white;
     padding-top: 50px;
     padding-left: 75px;
     text-shadow: 2px 1px #1a1a1a;
     letter-spacing: -1px;
-    padding: 20px 10px 10px 20px;
+    padding: 20px 10px 10px 20px;;
 }
 
 .calendar{

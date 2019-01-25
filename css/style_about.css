@@ -1,3 +1,4 @@
+
 /* Social */
 .tel-soc{
     background-color: #fdfdfd;
@@ -16,6 +17,74 @@
     margin-left: 10px;
 }
 
+
+/* Header Sttyle */
+.header{
+    background-image: url('../imgs/about.jpg');
+    background-size: cover;
+}
+.row.causeHeader{
+    margin: 0px;
+}
+.row.causeHeader h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(245, 245, 245);
+    border-bottom: 1px solid white;
+    padding-top: 50px;
+    padding-left: 75px;
+    text-shadow: 2px 1px #1a1a1a;
+    letter-spacing: -1px;
+    padding: 20px 10px 10px 40px;
+}
+.calendar{
+    padding: 10px 0 10px 80px;
+}
+.calendar i{
+    font-size: 100px;
+    color: white;
+}
+
+.section{
+    padding: 40px 0 40px 0;
+    background-color: rgb(228, 228, 228);
+}
+.section .about{
+    margin: 0px;
+    background-color: #fff;
+    padding: 40px 0 40px 0;
+    border-radius: 15px;
+}
+.section .about h1{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 35;
+    font-weight: 700;
+    text-align: center;
+}
+.section .about p{
+    width: 100%;
+    text-align: center;
+    padding: 20px 50px 20px 50px;
+}
+
+.adress{
+    margin: 50px 0 0 0;
+    background-color: #fff;
+    padding: 40px 40px 40px 40px;
+    border-radius: 15px;
+}
+.adress h1{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.ad1{
+    margin-bottom: 40px;
+}
+.firstP{
+    margin-bottom: 40px;   
+}
 
 /* Gestion de la navbar */
 nav{
@@ -90,80 +159,6 @@ nav{
 }
 
 
-
-/* Header Sttyle */
-.header{
-    background-image: url('../imgs/covTeam.jpg');
-    background-size: cover;
-    padding-bottom: 20px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
-}
-.row.teamHeader h1{
-    text-transform: uppercase;
-    font-weight: 600;
-    color: rgb(245, 245, 245);
-    border-bottom: 1px solid white;
-    padding-top: 50px;
-    padding-left: 75px;
-    text-shadow: 2px 1px #1a1a1a;
-    letter-spacing: -1px;
-    padding: 20px 10px 10px 20px;
-}
-.calendar{
-    padding: 10px 0 10px 80px;
-}
-.calendar i{
-    font-size: 100px;
-    color: white;
-    width: 100%; 
-}
-
-
-
-/* SECTION Style */
-section{
-    padding-top: 50px;
-}
-
-/* Style Team */
-.teamR, .teamL{
-    padding: 0 0 50px 0;
-}
-.teamR h2{
-    padding: 20px 0px 0px 20px;
-}
-.teamR h5{
-    padding: 0px 0px 0px 20px;
-    font-size: 18px;
-}
-.wrapEquipeR{
-    padding: 20px 0px 0 20px;
-}
-.wrapEquipeL{
-    padding: 10px 20px 0 0px;
-    text-align: right;
-}
-.teamL h2{
-    padding: 20px 20px 0px 0px;
-    text-align: right;
-}
-.teamL h5{
-    text-align: right;
-    font-size: 15px;
-}
-
-.textJoin p{
-    color: white;
-    font-size: 17px;
-    text-align: center;
-}
-.carous{
-    margin: 0px;  
-    background-color: #3388c0; 
-    height: 300px;
-}
-
-
 /* Pied de page */
 .footer{
     padding-top: 10px;
@@ -200,24 +195,6 @@ section{
 @media only screen and (max-width: 600px){
     .col-md-6.col-6.tel{
         padding: 0px;
-    }
-    .header{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .row.causeHeader{
-        padding: 10px;
-    }
-    .row.causeHeader h1{
-        padding: 0px;
-        text-align: center;
-    }
-    .calendar{
-        padding: 10px;
-        text-align: center;
-    }
-    .carous{
-        height: 320px;
     }
     .footer .col-md-6.col-sm-6.col-12{
         text-align: center;

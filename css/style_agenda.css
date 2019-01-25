@@ -107,15 +107,16 @@ section{
     background-image: url('../imgs/bckAg.jpg');
     background-size: cover;
 }
-.row.causeHeader{
-    margin: 0px;
+.row.causeHeader h1{
+    text-transform: uppercase;
+    font-weight: 600;
     color: rgb(245, 245, 245);
     border-bottom: 1px solid white;
     padding-top: 50px;
     padding-left: 75px;
     text-shadow: 2px 1px #1a1a1a;
     letter-spacing: -1px;
-    padding: 20px 10px 10px 20px;
+    padding: 20px 10px 10px 50px;;
 }
 .calendar{
     padding: 10px 0 10px 80px;

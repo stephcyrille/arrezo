@@ -100,6 +100,8 @@ nav{
     margin: 0px;
 }
 .row.causeHeader h1{
+    text-transform: uppercase;
+    font-weight: 600;
     color: rgb(245, 245, 245);
     border-bottom: 1px solid white;
     padding-top: 50px;
