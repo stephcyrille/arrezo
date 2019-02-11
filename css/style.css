@@ -471,10 +471,52 @@ section h2{
     color: aliceblue;
 }
 
-.corpModal img{
-    height: 200px;
+
+
+
+#demo{ 
     width: 100%;
+    overflow: visible;
 }
+.carousel-inner{
+    text-align: center;
+    background-color: aliceblue;
+    overflow: visible;
+}
+/* .carousel-item-next, .carousel-item-prev{
+    transform: translateX(0);
+    transform: translate3d(0,0,0)
+} */
+
+
+/* Scrolol Wrapp */
+.scrolling-wrapper{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* animation: infinite-scroll 30s infinite ease-in-out; */
+}
+/* @keyframes infinite-scroll{
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%)
+    }
+} */
+.card{
+    display: inline-block;
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+.card span{
+    display: block;
+    text-align: center;
+}
+.card img{
+    width: 100px;
+    height: 100px;;
+}
+
 
 /* Pied de page */
 .footer{
@@ -491,6 +533,10 @@ section h2{
 
 
 
+
+.modal-body form button{
+    width: 100%;
+}
 
 
 
