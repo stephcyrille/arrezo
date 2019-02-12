@@ -378,10 +378,29 @@
         <!-- FOOTER END HERE -->
 
 
+        <a href="#" id="toTop" style="display:block">
+            <span class="elevator-button" style="opacity: 0"></span>
+            Take me to the top
+        </a>
+
+
+        <!-- SCRIPTS PLACE -->
         <!-- ONLY FOR DEV -->
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+
+        <script src="https://cdn.bootcss.com/elevator.js/1.0.1/elevator.js"></script>
+        <script>
+            var elevator = new Elevator({
+                duration: 1000
+                });
+        
+            $(document).on('click', '.elevator-button', function(e) {
+                e.preventDefault();
+                elevator.elevate();
+                });
+        </script>
 
         <!-- SCRIPTS PLACE -->
         <script src="js/html5lightbox.js"></script>

@@ -117,79 +117,218 @@
 
         <!-- SECTION HEADER START -->
         <div class="section">
-            <div class="container">
+            <div class="offset-md-2 col-md-8">
                 <div class="row about">
-                    <h1 class="display-4"><b>- Notre mission -</b></h1>
+                    <h3 class=""><b>UNE GESTION TRANSPARENTE</b></h3>
                     <p>
-                        To provide the most actionable app store data.
+                        La légitimité d’une action repose inévitablement sur un souci de clarté et d’exigence quant à son fonctionnement, notamment financier. Pour cela, Action contre la Faim dresse chaque année un bilan complet de ses activités (rapport d’activités), ainsi que de la provenance et de l’utilisation de ses ressources (rapport financier).
                     </p>
                     <br>
 
-                    <h1 class="display-4"><b>A propos de nous</b></h1>
-                    <p>
-                            At Apptopia, we all come to work every day because we 
-                            want to solve the biggest problem in mobile. Everyone 
-                            is guessing. Publishers don’t know what apps to build, 
-                            how to monetize them, or even what to price them at. 
-                            Advertisers & brands don’t know where their target users 
-                            are, how to reach them, or even how much they need to spend 
-                            in order to do so. Investors aren’t sure which apps and genres 
-                            are growing the quickest, and where users are really spending 
-                            their time (and money).
-                    </p>
+                    <h3 class=""><b>DES FONDS UTILISÉS POUR LUTTER CONTRE LA FAIM PAR ACTION CONTRE LA FAIM FRANCE</b></h3>
+                    
+                    <div class="row" style="margin: 0;">
+                        <script src="https://code.highcharts.com/highcharts.js"></script>
+                        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                        <script src="https://code.highcharts.com/modules/export-data.js"></script>
 
-                    <p>
-                            Throughout the history of business, people use data to make more informed decisions. Our mission at Apptopia is to make the app economy more transparent. Today we provide the most actionable mobile app data & insights in the industry. We want to make this data available to as many people as possible (not just the top 5%).
-                    </p>
-                </div>
-                <div class="row adress">
-                    <h1>Localisation</h1>
-                    <div class="col-sm-4 lf">
-                        <p class="firstP">
-                            <span style="font-weight: 600">Arrezo Humanity, Inc.</span> is headquartered<br>
-                            in <span style="font-weight: 600">France, CE</span>.
-                        </p>
-                        <div class="">
-                            <div class="ad1">
-                                <a id="cmr-headquaters" href="#">
-                                <i class="fa fa-map-marker"></i>
-                                France (Headquaters)
-                                </a><br>
-                                1032 Avenue des Champs Elizes<br>
-                                3rd Floor<br>
-                                Paris, CE 02111
-                            </div>
-                            <div class="ad2">
-                                <a id="douala-headquarters" href="#">
-                                <i class="fa fa-map-marker m-r-xxs"></i>
-                                Cameroon</a><br>
-                                Boulevard de la Liberte<br>
-                                Douala, 01032 Cameroon
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <div id="map">
+                        <div class="mr-auto mx-auto" style="width: 100%">
+                            <span style="text-align: center; font-size: 20px; text-transform: uppercase; font-weight: bold; color: rgb(95, 95, 95)">88% DES EMPLOIS (DÉPENSES) SONT AFFECTÉS AUX MISSIONS SOCIALES</span>
+                            <div id="container" style="min-width: 310px; height: 250px; max-width: 600px; margin: 0 auto"></div>
+
                             <script>
-                                // Initialize and add the map
-                                function initMap() {
-                                    // The location of Uluru
-                                    var gie = {lat: 4.048264, lng: 9.701682};
-                                    // The map, centered at Uluru
-                                    var map = new google.maps.Map(
-                                        document.getElementById('map'), {zoom: 16, center: gie});
-                                    // The marker, positioned at Uluru
-                                    var marker = new google.maps.Marker({position: gie, map: map,});
-                                }
+                                // Build the chart
+                                Highcharts.chart('container', {
+                                    chart: {
+                                        plotBackgroundColor: null,
+                                        plotBorderWidth: 0,
+                                        plotShadow: false
+                                    },
+                                    title: {
+                                        text: '<span style="font-size: 17px; text-transform: uppercase; font-weight: bold; color: rgb(95, 95, 95)"> </span>',
+                                        align: 'center',
+                                        verticalAlign: 'middle',
+                                        y: 40
+                                    },
+                                    tooltip: {
+                                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                                    },
+                                    plotOptions: {
+                                        pie: {
+                                            dataLabels: {
+                                                enabled: true,
+                                                distance: 10,
+                                                style: {
+                                                    fontWeight: 'bold',
+                                                    color: 'white'
+                                                }
+                                            },
+                                            startAngle: 0,
+                                            endAngle: 360,
+                                            center: ['50%', '45%'],
+                                            size: '100%'
+                                        }
+                                    },
+                                    series: [{
+                                        type: 'pie',
+                                        name: 'Les depenses',
+                                        innerSize: '50%',
+                                        data: [
+                                            ['Logistique Mission de terrain', 58.9],
+                                            ['Frais de fonctionnement', 13.29],
+                                            ['Amenagement des Zones a risque', 13],
+                                            ['Construction d\'ecole', 3.78],
+                                            ['Restauration de centre de sante', 3.42],
+                                            {
+                                                name: 'Other',
+                                                y: 7.61,
+                                                dataLabels: {
+                                                    enabled: false
+                                                }
+                                            }
+                                        ]
+                                    }]
+                                });
                             </script>
                         </div>
                     </div>
+
+                    <div class="row" style="margin: 0; padding-bottom: 100px">
+                        <div class="mr-auto mx-auto" style="width: 100%;">
+                                <span style="text-align: center; font-size: 20px; text-transform: uppercase; font-weight: bold; color: rgb(95, 95, 95)">70% DES ENTREE SONT OBTENUS DE CETTE MANIERE</span>
+                            <div id="graph2" style="min-width: 310px; height: 250px; max-width: 600px; margin: 0 auto"></div>
+
+                            <script>
+                                // Build the chart
+                                Highcharts.chart('graph2', {
+                                    chart: {
+                                        plotBackgroundColor: null,
+                                        plotBorderWidth: 0,
+                                        plotShadow: false
+                                    },
+                                    title: {
+                                        text: '<span style="font-size: 17px; text-transform: uppercase; font-weight: bold; color: rgb(95, 95, 95)"> </span>',
+                                        align: 'center',
+                                        verticalAlign: 'middle',
+                                        y: 40
+                                    },
+                                    tooltip: {
+                                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                                    },
+                                    plotOptions: {
+                                        pie: {
+                                            dataLabels: {
+                                                enabled: true,
+                                                distance: 10,
+                                                style: {
+                                                    fontWeight: 'bold',
+                                                    color: 'white'
+                                                }
+                                            },
+                                            startAngle: 0,
+                                            endAngle: 360,
+                                            center: ['50%', '45%'],
+                                            size: '100%'
+                                        }
+                                    },
+                                    series: [{
+                                        type: 'pie',
+                                        name: 'Donateurs',
+                                        innerSize: '50%',
+                                        data: [
+                                            ['Donateur Europe', 42],
+                                            ['L\'apport de l\'etat', 28],
+                                            ['Le Senat USA', 10],
+                                            ['Autres Donateurs', 20],
+                                        ]
+                                    }]
+                                });
+                                
+                            </script>
+                        </div>
+                    </div>
+
+
+                    <h3 class=""><b>UNE GESTION ASSURÉE PAR DE SOLIDES GARANTIES</b></h3>
+                    <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Donec nec nisi nulla. Suspendisse consequat dolor nec nunc facilisis viverra. Donec hendrerit diam et velit bibendum hendrerit. Etiam ultrices porta enim, ac convallis tortor laoreet luctus. Nunc in luctus leo. Nullam vulputate, nisl ut posuere placerat, odio diam consectetur risus, in consequat sapien leo sit amet eros. Donec non velit quis nisi dignissim aliquet.Duis quis augue nulla. Phasellus a semper nisi. Curabitur porttitor ipsum nulla, a hendrerit mi aliquam sit amet. Morbi sit amet magna porta, facilisis metus eget, dignissim neque. In faucibus lorem justo, vitae eleifend nisl blandit sed. In et nulla tempor, vulputate sem at, dictum odio. Vestibulum interdum augue eu placerat ornare. Praesent vel hendrerit arcu. Integer in magna eget felis ultrices tristique.
+                    </p>
+                    
+                    <h3 style="width: 100%"><b>RAPPORTS D'ACTIVITEs ET FINANCIEREs</b></h3>
+                    <div class="p1">
+                        <span>Le rapport d’activités 2017 est à la disposition de tous: </span><br>
+                        <p>
+                            <a href="#">Rapport annuel 2017</a> <br>
+                            <a href="#">Rapport financier 2017</a> <br>
+                            <a href="#">Essentiel des comptes 2017</a> <br>
+                            <a href="#">Rapport des Commissaires aux Comptes 2017</a> <br>
+                            <a href="#">Rapport Moral d’Activités 2017</a>
+                        </p>
+                    </div>
+
+                    <div class="p2">
+                        <span>Le rapport d’activités 2016 est à la disposition de tous :</span><br>
+                        <p>
+                            <a href="#">Rapport annuel 2016  </a><br>
+                            <a href="#">Essentiel des comptes 2016</a><br>
+                            <a href="#">Rapport financier 2016</a>
+                        </p>
+                    </div>
+                    
+                    <div class="p3">
+                        <span>Le rapport d’activités 2015 est à la disposition de tous :</span><br>
+                        <p>
+                            <a href="#">Rapport annuel 2015</a><br>
+                            <a href="#">Rapport Moral d’Activités 2015 </a>
+                            <a href="#">Essentiel des comptes 2015</a><br>
+                            <a href="#">Rapport financier 2015</a>
+                        </p>
+                    </div>
+                    
                 </div>
+                
                 <!-- <div class="glyph">
                     <i class="fas fa-info-circle"></i>
                 </div> -->
             </div>
         </div>
+        
+        <section>
+            <div class="row bg-dark formular" style="margin: 0; padding: 50px 0 0 0  ">
+                <h1 class="titre" style="text-align: center; width: 100%"><i class="fas fa-envelope white-text" ></i></h1>
+                <h1 class="titre white-text" style="text-align: center; width: 100%">Laissez-nous un message</h1>
+                <h6 style="text-align: center; width: 100%" class="white-text">Partagez vos idees, suggestions et soyez les premiers a etre informe de nos actions</h6>
+                
+                    <!-- Grid column -->
+                <div class="offset-2 col-md-8 mb-4 col-12 formBody">
+                    <div class="card form-light">
+                        <div class="card-body">
+                            <!-- Form contact -->
+                            <form>
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix danger-text"></i>
+                                    <input type="text" id="form32" class="form-control" placeholder="Nom">
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix danger-text"></i>
+                                    <input type="text" id="form322" class="form-control" placeholder="Prenom">
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix danger-text"></i>
+                                    <input type="email" id="form22" class="form-control" placeholder="Votre email">
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-danger btn-lg">Envoyer</button>
+                                </div>
+                            </form>
+                            <!-- Form contact -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+        </section>
 
 
         
@@ -213,10 +352,31 @@
         <!-- FOOTER END HERE -->
 
 
+        <a href="#" id="toTop" style="display:block">
+            <span class="elevator-button" style="opacity: 0"></span>
+            Take me to the top
+        </a>
+
+
+        <!-- SCRIPTS PLACE -->
         <!-- ONLY FOR DEV -->
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+
+        <script src="https://cdn.bootcss.com/elevator.js/1.0.1/elevator.js"></script>
+        <script>
+            var elevator = new Elevator({
+                duration: 1000
+                });
+        
+            $(document).on('click', '.elevator-button', function(e) {
+                e.preventDefault();
+                elevator.elevate();
+                });
+        </script>
+
+        
 
         <!-- SCRIPTS PLACE -->
         <!--Load the API from the specified URL

@@ -10,6 +10,9 @@ $(window).on('scroll', function() {
     }
 });
 
+$("#carousel").on('click', function() {
+    $(this).toggle(1500)
+});
 
 // $('.tabs a').click(function(e){
 //     var $a = $(this);

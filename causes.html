@@ -77,10 +77,10 @@
                             <a class="nav-link" href="gallery.html">Gallerie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Equipe</a>
+                            <a class="nav-link" href="equipe.html">Equipe</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="about.html">A propos de nous</a>
@@ -96,7 +96,7 @@
 
         <!-- SECTION HEADER START -->
         <div class="header">
-            <div class="row causeHeader">
+            <div class="row causeHeader" style="margin: 0px">
                 <h1 class="display-4"><b>Les Causes défendues</b></h1>
             </div>
             <div class="calendar">
@@ -109,18 +109,18 @@
 
         <!-- SECTION CAUSES START -->
         <div class="causes"  style="padding-top: 50px">
-            <div class="row">
+            <div class="row" style="margin: 0px">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" style="margin: 0px">
                         <div class="offset-md-1 col-md-10 col-12">
                             <p>
                                 Lorem ipsum dollor espom doller ipsum lorem ipsum dollor espom doller ipsum 
                                 Lorem ipsum dollor espom doller ipsum lorem ipsum dollor espom doller ipsum  
                             </p>
-                            <div class="row">
+                            <div class="row" style="margin: 0px">
                                 <!-- N 1 -->
                                 <div id="causeBlock" class="col-md-12 col-12 causeBloc">
-                                    <div class="row bl">
+                                    <div class="row bl" style="margin: 0px">
                                         <div class="col-md-3 col-12 causeImg">
                                             <figure>
                                                 <img src="imgs/theme/image-20-150x150.jpg" alt="cause" class="img-fluid">
@@ -153,7 +153,7 @@
 
                                 <!-- N 2 -->
                                 <div id="causeBlock2" class="col-md-12 col-12 causeBloc">
-                                    <div class="row bl">
+                                    <div class="row bl" style="margin: 0px">
                                         <div class="col-md-3 col-12 causeImg">
                                             <figure>
                                                 <img src="imgs/theme/slider-3-150x150.jpg" alt="cause" class="img-fluid">
@@ -186,7 +186,7 @@
                                 
                                 <!-- N 3 -->
                                 <div id="causeBlock3" class="col-md-12 col-12 causeBloc">
-                                    <div class="row bl">
+                                    <div class="row bl" style="margin: 0px">
                                         <div class="col-md-3 col-12 causeImg">
                                             <figure>
                                                 <img src="imgs/theme/image-17.jpg" alt="cause" class="img-fluid">
@@ -219,7 +219,7 @@
                                 
                                 <!-- N 4 -->
                                 <div id="causeBlock4" class="col-md-12 col-12 causeBloc">
-                                    <div class="row bl">
+                                    <div class="row bl" style="margin: 0px">
                                         <div class="col-md-3 col-12 causeImg">
                                             <figure>
                                                 <img src="imgs/theme/slider-2-150x150.jpg" alt="cause" class="img-fluid">
@@ -294,6 +294,11 @@
         </div>
         <!-- FOOTER END HERE -->
 
+        <a href="#" id="toTop" style="display:block">
+            <span class="elevator-button" style="opacity: 0"></span>
+            Take me to the top
+        </a>
+
 
         <!-- SCRIPTS PLACE -->
         <!-- ONLY FOR DEV -->
@@ -302,6 +307,18 @@
         <script src="js/bootstrap.min.js"></script>
 
         <script src="js/effetsCause.js"></script>
+
+        <script src="https://cdn.bootcss.com/elevator.js/1.0.1/elevator.js"></script>
+        <script>
+            var elevator = new Elevator({
+                duration: 1000
+                });
+        
+            $(document).on('click', '.elevator-button', function(e) {
+                e.preventDefault();
+                elevator.elevate();
+                });
+        </script>
     </body>
 
 </html>
